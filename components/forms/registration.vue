@@ -39,10 +39,10 @@
       <input id="password" v-model="password" type="password" name="password" :required="true" class="tfd-input" />
     </div>
     <div class="relative mb-4">
-      <label for="confirmPassword" class="leading-7 text-sm text-gray-600">{{
-        $t("confirmPassword")
+      <label for="passwordConfirmation" class="leading-7 text-sm text-gray-600">{{
+        $t("passwordConfirmation")
       }}</label>
-      <input id="confirmPassword" v-model="confirmPassword" type="password" name="confirmPassword" :required="true"
+      <input id="passwordConfirmation" v-model="passwordConfirmation" type="password" name="passwordConfirmation" :required="true"
         class="tfd-input" />
     </div>
     <div class="flex flex-row justify-center space-x-4">
@@ -62,7 +62,7 @@ export default {
       name: "",
       email: "",
       password: "",
-      confirmPassword: "",
+      passwordConfirmation: "",
     };
   },
   methods: {
@@ -75,7 +75,7 @@ export default {
     },
     async submit() {
       try {
-        await this.$axios.$post("/api/v1/user/register", {
+        await this.$axios.$post("/api/v1/auth/register", {
           username: this.username,
           email: this.email,
           name: this.name,
