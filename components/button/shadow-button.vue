@@ -1,26 +1,20 @@
 <template>
-  <div
-    class="
+  <div class="
       relative
       inline-block
       group
       focus:outline-none focus:ring
       cursor-pointer
-    "
-  >
-    <span
-      class="
+    ">
+    <span class="
         absolute
         inset-0
         transition-transform
         translate-x-0 translate-y-0
         group-hover:translate-y-1.5 group-hover:translate-x-1.5
-      "
-      :class="color"
-    ></span>
+      " :class="color"></span>
 
-    <span
-      class="
+    <span class="
         relative
         inline-block
         px-8
@@ -31,9 +25,7 @@
         uppercase
         border-2 border-black
         text-white
-      "
-      @click="handleClick"
-    >
+      " @click="handleClick">
       {{ $t(text) }}
     </span>
   </div>

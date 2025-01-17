@@ -21,7 +21,6 @@ export default {
       },
     ],
   },
-  target: "server",
   manifest: {
     name: "TFD Nuxt Frontend",
     short_name: "TFD Nuxt",
