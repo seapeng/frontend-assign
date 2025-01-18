@@ -3,7 +3,7 @@ import createSitemapRoutes from "./utils/createSitemap";
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   server:{
-    port:4000,
+    port:3000,
     host: '0.0.0.0'
    },
   head: {
