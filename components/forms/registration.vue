@@ -40,7 +40,7 @@
     </div>
     <div class="relative mb-4">
       <label for="passwordConfirmation" class="leading-7 text-sm text-gray-600">{{
-        $t("passwordConfirmation")
+        $t("confirmPassword")
       }}</label>
       <input id="passwordConfirmation" v-model="passwordConfirmation" type="password" name="passwordConfirmation" :required="true"
         class="tfd-input" />
